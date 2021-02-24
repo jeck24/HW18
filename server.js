@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/HW18", {
   useCreateIndex: true
 });
 
-// routes
+//routes
 app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
